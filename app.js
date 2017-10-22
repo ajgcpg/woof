@@ -5,12 +5,12 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/woof', { useMongoClient: true });
+mongoose.Promise = global.Promise;
 
 var index = require('./routes/index');
 
 var app = express();
-
-mongoose.connect('localhost:27017/woof');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

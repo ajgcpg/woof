@@ -17,7 +17,7 @@ router.get('/type', function(req, res, next) {
 
 router.get('/interface', function(req, res, next) {
     var dogs = Dog.find();
-    res.render('interface', { title: 'Express', dogs: dogs[0] });
+    res.render('interface', { title: 'Express', dogs: dogs });
 });
 
 router.get('/', function(req, res, next) {

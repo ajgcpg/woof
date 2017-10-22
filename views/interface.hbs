@@ -2,16 +2,20 @@
     <div class="col align-self-center">
         <div align="center" margin-top="0" class="jumbotron">
             <h1 class="display-4" id="Title">woof</h1>
+            {{ # each dogs }}
             <div class = "woofCard">
-                <img align = "center" src="placeholder.jpg" alt="Picture">
+                <img align = "center" src="{{ this.imagePath }}" alt="Picture">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm">
-                            <h6>{{}}, Age</h6>
+                            <h6>{{ this.name }}, {{ this.age }}</h6>
                         </div>
                         <div class="col-sm">
-                            <h6>M/F</h6>
+                            <h6>{{ this.sex }}</h6>
                         </div>
+                    </div>
+                    <div class="row">
+                        <p>{{ this.description }}</P>
                     </div>
                 </div>
                 <hr>
@@ -19,5 +23,6 @@
                 <button id = "choice" type="button" class="btn btn-success" href="#">Yes</button>
             </div>
         </div>
+        {{/each}}
     </div>
 </div>
