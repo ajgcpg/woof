@@ -16,8 +16,13 @@ router.get('/type', function(req, res, next) {
 });
 
 router.get('/interface', function(req, res, next) {
-    var dogs = Dog.find();
-    res.render('interface', { title: 'Express', dogs: dogs });
+    Dog.find(function (err, docs) {
+        var dogs = [];
+        for (var i = 0, n = docs.length; i < n; i += 1) {
+            dogs.push(docs.slice(i, i + 1));
+        }
+        res.render('interface', {title: 'Express', dogs: dogs});
+    })
 });
 
 router.get('/', function(req, res, next) {

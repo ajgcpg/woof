@@ -2,7 +2,8 @@
     <div class="col align-self-center">
         <div align="center" margin-top="0" class="jumbotron">
             <h1 class="display-4" id="Title">woof</h1>
-            {{ # each dogs }}
+            {{# each dogs }}
+                {{# each this }}
             <div class = "woofCard">
                 <img align = "center" src="{{ this.imagePath }}" alt="Picture">
                 <div class="container">
@@ -23,6 +24,7 @@
                 <button id = "choice" type="button" class="btn btn-success" href="#">Yes</button>
             </div>
         </div>
+        {{/each}}
         {{/each}}
     </div>
 </div>
