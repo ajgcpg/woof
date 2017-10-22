@@ -1,8 +1,51 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.jumbotron{
+  background: transparent;
+  padding: 0rem 0rem;
+}
+.woofCard{
+  padding: 1em;
+  margin: 1em;
+  box-shadow: 3px 3px 10px #888888;
 }
 
-a {
-  color: #00B7FF;
+#Title{
+  color: #ff9933;
+}
+
+#tagline{
+  color: gray;
+  font-style: italic;
+}
+
+#menu{
+  color: white;
+  background-color: #ffa64d;
+  border-color: #ffa64d;
+  border-radius: 0;
+  width: 6em;
+}
+#menu:hover{
+  background-color: #ffd9b3;
+  border-color: #ffa64d;
+  border-radius: 0;
+}
+#menu:active{
+  background-color: #ffd9b3;
+  border-color: #ffa64d;
+  border-radius: 0;
+}
+#choice{
+  width: 4em;
+  text-align: center;
+}
+
+#name{
+  margin-left: 5em;
+
+}
+#breed{
+  margin-right: 5em;
+}
+#woofInterface{
+  width: 35em;
 }
