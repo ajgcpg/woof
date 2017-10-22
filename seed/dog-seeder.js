@@ -8,16 +8,16 @@ var dogs = [
     new Dog({
         imagePath: 'http://cdn2-www.dogtime.com/assets/uploads/2011/01/file_23244_what-is-the-appenzeller-sennenhunde-dog-300x189.jpg',
         name: 'Kidus',
-        description: 'Fattest shit alive',
-        age: 'fat',
-        gender: 'fat'
+        description: 'Test1',
+        age: '5',
+        gender: 'm'
     }),
     new Dog({
         imagePath: 'http://cdn2-www.dogtime.com/assets/uploads/2011/01/file_23244_what-is-the-appenzeller-sennenhunde-dog-300x189.jpg',
-        name: 'Kidus',
-        description: 'Fattest shit alive',
-        age: 'fat',
-        gender: 'fat'
+        name: 'Kidus2',
+        description: 'Test2',
+        age: '6',
+        gender: 'f'
     })
 ];
 
