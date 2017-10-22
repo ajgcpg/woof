@@ -9,4 +9,4 @@ var schema = new Schema({
     sex: {type: String, required:true},
 });
 
-model.exports = mongoose.model('Dog', schema);
+module.exports = mongoose.model('Dog', schema);
